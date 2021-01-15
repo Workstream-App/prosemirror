@@ -15,7 +15,7 @@ module ProsemirrorToHtml
             tag: 'img',
             attrs: {
               src: data.attrs[:thumb],
-              style: 'max-width: 300px;'
+              style: 'max-width: 470px;'
             }
           }
         ]
