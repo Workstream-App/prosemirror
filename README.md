@@ -24,7 +24,7 @@ Or install it yourself as:
 require 'prosemirror-to-html'
 
 json = JSON.parse('{"type": "doc", "content": [{ "type": "paragraph","content": [{ "text": "Test message for email", "type": "text" }, { "type": "hard_break" }] }] }')
-ProsemirrorToHtml::Renderer.new().render(json)
+ProsemirrorToHtml::Renderer.new.render(json)
 ```
 
 ## Development
