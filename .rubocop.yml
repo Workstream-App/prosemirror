@@ -1,0 +1,62 @@
+require: rubocop-performance
+
+AllCops:
+  TargetRubyVersion: 2.7
+  NewCops: enable
+  Exclude:
+    - 'bin/*'
+
+Layout/FirstArgumentIndentation:
+  Enabled: false
+
+Layout/LineLength:
+  Max: 130
+  Exclude:
+    - 'spec/**/**/*'
+
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - "spec/**/**/*"
+
+Lint/MissingSuper:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 20
+
+Metrics/BlockLength:
+  Max: 40
+  Exclude:
+    - 'spec/**/**/*'
+
+Metrics/MethodLength:
+  Max: 30
+
+Metrics/ModuleLength:
+  Exclude:
+    - 'spec/**/**/*'
+
+Naming/FileName:
+  Exclude:
+    - 'lib/prosemirror-to-html.rb'
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/Lambda:
+  EnforcedStyle: literal
+
+Style/SafeNavigation:
+  Enabled: false
+
+Style/StructInheritance:
+  Enabled: false
+
+#Style/SymbolArray:
+#  EnforcedStyle: brackets
+
+#Style/WordArray:
+#  EnforcedStyle: brackets
