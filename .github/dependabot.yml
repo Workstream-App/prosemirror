@@ -1,0 +1,9 @@
+version: 2
+updates:
+  # Enable version updates for bundler
+  - package-ecosystem: "bundler"
+    # Look for `Gemfile` and `Gemfile.lock` files in the `root` directory
+    directory: "/"
+    # Check the bundler registry for updates every day (weekdays)
+    schedule:
+      interval: "daily"
