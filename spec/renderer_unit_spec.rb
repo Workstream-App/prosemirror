@@ -119,7 +119,7 @@ RSpec.describe ProsemirrorToHtml::Renderer do
     end
 
     context 'when there is a loom_embed node' do
-      let(:expected_html) { '<a href="https://www.loom.com/share/123"><img src="https://cdn.loom.com/sessions/thumbnails/123.gif" style="max-width: 300px;"></img></a>' }
+      let(:expected_html) { '<a href="https://www.loom.com/share/123"><img src="https://cdn.loom.com/sessions/thumbnails/123.gif" style="max-width: 470px;"></img></a>' }
       let(:json) do
         {
           type: 'doc',
