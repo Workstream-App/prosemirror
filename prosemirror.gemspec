@@ -1,18 +1,18 @@
 lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'prosemirror_to_html/version'
+require 'prosemirror/version'
 
 Gem::Specification.new do |spec|
   spec.required_ruby_version = '>= 2.7.0'
 
-  spec.name          = 'prosemirror-to-html'
-  spec.version       = ProsemirrorToHtml::VERSION
+  spec.name          = 'prosemirror'
+  spec.version       = Prosemirror::VERSION
   spec.authors       = ['Workstream']
   spec.email         = ['engineering@workstream.io']
 
-  spec.summary       = 'Takes ProseMirror compatible JSON and outputs HTML.'
-  spec.description   = 'Takes ProseMirror compatible JSON and outputs HTML.'
-  spec.homepage      = 'https://github.com/Workstream-App/prosemirror-to-html'
+  spec.summary       = 'Takes ProseMirror compatible JSON and outputs HTML or text.'
+  spec.description   = 'Takes ProseMirror compatible JSON and outputs HTML or text.'
+  spec.homepage      = 'https://github.com/Workstream-App/prosemirror'
 
   # Prevent pushing this gem to RubyGems.org.
   raise 'RubyGems 2.0 or newer is required to protect against public gem pushes.' unless spec.respond_to?(:metadata)

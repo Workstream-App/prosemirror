@@ -38,7 +38,7 @@ Metrics/ModuleLength:
 
 Naming/FileName:
   Exclude:
-    - 'lib/prosemirror-to-html.rb'
+    - 'lib/prosemirror.rb'
 
 Style/Documentation:
   Enabled: false

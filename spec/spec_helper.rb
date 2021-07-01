@@ -1,5 +1,5 @@
 require 'bundler/setup'
-require 'prosemirror-to-html'
+require 'prosemirror'
 require 'pry'
 
 RSpec.configure do |config|

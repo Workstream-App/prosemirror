@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    prosemirror-to-html (0.1.0)
+    prosemirror (0.2.0)
 
 GEM
   remote: https://rubygems.org/
@@ -55,7 +55,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler
-  prosemirror-to-html!
+  prosemirror!
   pry
   rake
   rspec
