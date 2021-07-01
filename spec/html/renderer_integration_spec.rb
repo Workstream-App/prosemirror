@@ -1,6 +1,6 @@
-require_relative './spec_helper'
+require_relative './../spec_helper'
 
-RSpec.describe ProsemirrorToHtml::Renderer do
+RSpec.describe Prosemirror::Html::Renderer do
   describe '#render' do
     context 'when there is a paragraph, text with marks, a hard break, and a bullet_list with list_items' do
       let(:expected_html) { '<p><strong><em><s>Text</s></em></strong></p><br></br><ul><li>Item 1</li><li>Item 2</li></ul>' }

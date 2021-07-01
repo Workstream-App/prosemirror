@@ -1,6 +1,6 @@
-require_relative './spec_helper'
+require_relative './../spec_helper'
 
-RSpec.describe ProsemirrorToHtml::Renderer do
+RSpec.describe Prosemirror::Html::Renderer do
   subject { described_class.new }
 
   describe '#render' do
