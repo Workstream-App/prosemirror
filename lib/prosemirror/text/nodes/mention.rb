@@ -5,7 +5,7 @@ module Prosemirror
     module Nodes
       class Mention < Node
         def text
-          data.attrs[:label]
+          data['attrs']['label']
         end
       end
     end

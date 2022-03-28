@@ -5,7 +5,7 @@ module Prosemirror
     module Marks
       class Link < Mark
         def suffix
-          "(#{@node.attrs[:href]})"
+          "(#{@node['attrs']['href']})"
         end
       end
     end

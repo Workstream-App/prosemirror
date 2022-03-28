@@ -9,11 +9,11 @@ module Prosemirror
         end
 
         def content
-          data.content
+          data['content']
         end
 
         def marks
-          data.marks
+          data['marks']
         end
 
         def tags
@@ -21,7 +21,7 @@ module Prosemirror
         end
 
         def text
-          data.text
+          data['text']
         end
 
         def prefix

@@ -5,7 +5,7 @@ module Prosemirror
     module Nodes
       class Image < Node
         def text
-          data.attrs[:src]
+          data['attrs']['src']
         end
       end
     end

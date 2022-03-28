@@ -5,7 +5,7 @@ module Prosemirror
     module Nodes
       class LoomEmbed < Node
         def text
-          data.attrs[:share]
+          data['attrs']['share']
         end
       end
     end

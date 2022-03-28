@@ -8,8 +8,10 @@ module Prosemirror
   module Text
     class Renderer
       def render(hash)
-        object = JSON.parse(hash.to_json, object_class: OpenStruct)
-        nodes = object.content.map { |node| render_node(node) }
+        object = JSON.parse(hash.to_json, object_class: Hash)
+        return '' unless object['content']
+
+        nodes = object['content'].map { |node| render_node(node) }
 
         nodes.reject(&:empty?).join(' ')
       end
@@ -71,7 +73,7 @@ module Prosemirror
 
       # Find which Node matches the Text Node
       def get_matching_node(item)
-        case item.type
+        case item['type']
         when 'hard_break'
           return Prosemirror::Text::Nodes::HardBreak.new(item)
         when 'image'
@@ -91,7 +93,7 @@ module Prosemirror
 
       # Find which Mark matches the Text Element
       def get_matching_mark(item)
-        return nil unless item.type == 'link'
+        return nil unless item['type'] == 'link'
 
         Prosemirror::Text::Marks::Link.new(item)
       end
